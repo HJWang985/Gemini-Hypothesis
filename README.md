@@ -10,7 +10,7 @@ This repository contains the full text of the "Gemini Hypothesis," a new physica
 
 *   ### ➡️ **[English Version](./Gemini_Hypothesis.md)**
 
-*   ### ➡️ **[中文版](./双子座假说.md)**
+*   ### ➡️ **[中文版](./Gemini假说.md)**
 
 ---
 
