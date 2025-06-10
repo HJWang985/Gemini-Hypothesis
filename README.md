@@ -25,8 +25,11 @@
 
 为了更好地理解本假说的关键论点，我们建议您阅读以下几篇专题文章。它们是我们理论体系的基石。
 
-1.  **[理论预测：水星进动的残差解](./双子座假说之水星进动预测.md)**
+1.  **理论预测：水星进动的残差解 (Theoretical Prediction: A Solution to Mercury's Precession Residual)**
+    *   ➡️ **[阅读中文版](./双子座假说之水星进动预测.md)**
+    *   ➡️ **[Read in English](./Gemini_Hypothesis_Mercury_Precession_Prediction.md)**
     > 本文基于"观测者三体论"，对水星近日点进动的微小残差做出了一个精确的、可被证伪的理论预测：+4.475 微角秒/每世纪。这是本理论体系第一个可供直接验证的定量结果。
+    > This paper, based on the "Observer-Three-Body Theory," makes a precise, falsifiable prediction for the minute residual in Mercury's perihelion precession: +4.475 microarcseconds per century. This is the first directly verifiable quantitative result of our theoretical framework.
 
 2.  **[解构空间：引力的量子-几何本质](./解构空间.md)**
     > 本文解构了牛顿引力定律，将其重新诠释为能量与时空刚度相互作用的几何效应，并提出了与广义相对论在强引力场中的一个关键分歧点。
