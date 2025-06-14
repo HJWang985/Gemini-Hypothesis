@@ -38,28 +38,35 @@ To formalize the MSG hypothesis, we leverage the powerful tools of complex analy
 ### 2.1 From Taylor to Laurent Series: The Mathematical Essence of Measurement
 
 We model an unobserved, freely evolving quantum system (described by its wave function `Ψ`) as a complex function `f(z)` that is **analytic** within a certain region `D` of the complex plane. Analyticity implies that the function is infinitely differentiable within `D`, exhibiting extreme smoothness and harmony. At any point `z₀` within `D`, `f(z)` can be perfectly expanded into a **Taylor series**:
-\[ f(z) = \sum_{n=0}^{\infty} a_n (z - z_0)^n \]
+```math
+f(z) = \sum_{n=0}^{\infty} a_n (z - z_0)^n
+```
 This series contains only non-negative integer powers of `(z - z_0)`, representing the system's deterministic evolutionary potential at that point.
 
 Now, we introduce "measurement." In our model, the measurement apparatus imposes a non-analytic, structured boundary condition on the system at a point `c`. This interaction destroys the analyticity of `f(z)` at `c`, creating a **singularity**.
 
 To describe this new system containing the singularity `c`, mathematics must extend from a Taylor series to a **Laurent series**. In an annular domain around the singularity `c`, the function `f(z)` is represented as:
-\[ f(z) = \sum_{n=-\infty}^{\infty} a_n (z - c)^n = \underbrace{\sum_{n=0}^{\infty} a_n (z - c)^n}_{\text{Analytic Part}} + \underbrace{\sum_{n=1}^{\infty} b_n (z - c)^{-n}}_{\text{Principal Part}} \]
+```math
+f(z) = \sum_{n=-\infty}^{\infty} a_n (z - c)^n = \underbrace{\sum_{n=0}^{\infty} a_n (z - c)^n}_{\text{Analytic Part}} + \underbrace{\sum_{n=1}^{\infty} b_n (z - c)^{-n}}_{\text{Principal Part}}
+```
 The appearance of negative power terms (the "principal part") is the direct mathematical sign of the singularity's existence. We therefore assert:
 **The mathematical essence of the measurement process is the transformation of the system's description from a pure Taylor series to a Laurent series containing a "principal part."**
 
 ### 2.2 The Origin of the Born Rule: Probability Amplitude as the Residue of the Singularity
 
 One of the most profound and powerful concepts in Laurent series theory is the **Residue**. For an isolated singularity `c`, its residue is defined as the coefficient `a₋₁` of the `(z-c)⁻¹` term in the Laurent expansion.
-\[ \text{Res}(f, c) = a_{-1} = \frac{1}{2\pi i} \oint_\gamma f(z) dz \]
+```math
+\text{Res}(f, c) = a_{-1} = \frac{1}{2\pi i} \oint_\gamma f(z) dz
+```
 The residue captures the most essential local property of the singularity.
 
 Here, we propose the most audacious and explanatory corollary of our theory, aiming to provide a geometric origin for the core axiom of quantum mechanics—the Born Rule:
 **In a measurement process, the probability amplitude `ψ(m)` for the system to "collapse" to a specific eigenstate `m` is identical to the residue `Res(f, c_m)` at the singularity `c_m` that corresponds to the outcome `m`.**
 
 Therefore, the probability `P(m)` of obtaining that outcome is:
-\[ P(m) = |\psi(m)|^2 \equiv |\text{Res}(f, c_m)|^2 \]
-
+```math
+P(m) = |\psi(m)|^2 \equiv |\text{Res}(f, c_m)|^2
+```
 In this view, the Born Rule is no longer an external axiom to be imposed upon the theory, but emerges as a natural mathematical consequence of the MSG model. The probabilistic nature of quantum mechanics does not stem from an intrinsic randomness of the universe, but from the **geometric properties of the spacetime singularity generated during the observer-system interaction**. A specific measurement interaction deterministically creates a singularity with a specific residue. We experience probability because our mode of description (probability amplitude) is a direct reflection of this underlying geometric structure (the residue).
 
 This corollary reduces the mystery of quantum probability to a solid and elegant concept in complex analysis, laying the mathematical foundation for the subsequent analysis of energy and signals.
@@ -92,15 +99,21 @@ Our goal is to solve for `E_s`. We must therefore relate `E_s` to observables. W
 Starting from the modified energy conservation equation (4) and combining it with the momentum conservation equations (2) and (3), one can perform a standard algebraic derivation to eliminate the final state variables (`E'_γ`, `E_e`, `p'_γ`, `p_e`) and find the relationship between the change in the scattered photon's wavelength `Δλ` and the scattering angle `θ`.
 
 The standard Compton scattering formula is:
-\[ \Delta\lambda = \lambda' - \lambda = \frac{h}{m_e c}(1 - \cos\theta) \]
+```math
+\Delta\lambda = \lambda' - \lambda = \frac{h}{m_e c}(1 - \cos\theta)
+```
 When the derivation is performed with our modified equation (4), a correction term emerges. While the algebra is tedious, it is straightforward (details omitted here to maintain focus on the main argument), and it yields a modified formula of the form:
-\[ \Delta\lambda_{MSG} = \frac{h}{m_e c}(1 - \cos\theta) - f(E_s, E_\gamma, \theta) \]
+```math
+\Delta\lambda_{MSG} = \frac{h}{m_e c}(1 - \cos\theta) - f(E_s, E_\gamma, \theta)
+```
 where `f` is a correction function involving `E_s`. This implies that if our theory is correct, high-precision Compton scattering experiments should reveal a systematic deviation from the standard formula's predictions. This deviation would directly correspond to the magnitude of `E_s`.
 
 ### 3.3 The Core Equation: `E_s = E_c² / E_0`
 
 Now we take the most crucial step in our theoretical construction. We hypothesize a simple power-law relationship between `E_s`, `E_c` (i.e., `E_γ`), and `E_0`:
-\[ E_s = k \cdot E_c^\alpha \cdot E_0^\beta \]
+```math
+E_s = k \cdot E_c^\alpha \cdot E_0^\beta
+```
 where `k`, `α`, and `β` are constants to be determined.
 Dimensional analysis requires `k` to be dimensionless. From physical intuition, we propose three constraints:
 1.  **Greater observer energy should yield a stronger singularity effect**: `α > 0`.
@@ -108,7 +121,9 @@ Dimensional analysis requires `k` to be dimensionless. From physical intuition, 
 3.  **Symmetry and Simplicity**: We seek the most elegant physical explanation. A natural assumption is a "quadratic" or "square-law" relationship in the energy exchange, which is common in physics (e.g., kinetic energy, electric field energy). Our boldest conjecture is that `α = 2` and `β = -1`.
 
 Substituting `α=2, β=-1`, and assuming the dimensionless constant `k=1` (which can be achieved by a re-definition of units, or by a belief in nature's elegance), we arrive at the core equation of our theory:
-\[ E_s = \frac{E_c^2}{E_0} \]
+```math
+E_s = \frac{E_c^2}{E_0}
+```
 where `E_c` is the energy of the observer (incident photon) and `E_0` is the rest energy of the observed (target particle).
 
 The implications of this equation are profound:
