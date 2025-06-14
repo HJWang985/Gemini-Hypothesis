@@ -45,7 +45,9 @@
 3.  **探索频率 `ν_explore`**: 测量意识轨迹在流形 `M` 中进入全新区域（即过去未曾被激活的区域）的频率。若 `ν_explore` 过低，则 `Ω` 升高。
 
 一个可能的 `Ω` 形式可以写作：
-$$ \Omega(T) = w_1 \int_0^T \frac{dt}{H(P(t))} + w_2 \left< \frac{1}{\tau_{\text{recover}}} \right>_{\text{events}} - w_3 \left< \nu_{\text{explore}} \right>_T $$
+```math
+\Omega(T) = w_1 \int_0^T \frac{dt}{H(P(t))} + w_2 \left< \frac{1}{\tau_{\text{recover}}} \right>_{\text{events}} - w_3 \left< \nu_{\text{explore}} \right>_T
+```
 其中 `w_i` 是权重系数，`T`是评估的时间窗口。这是一个高度简化的示意，真实形式会更复杂。
 
 ---
