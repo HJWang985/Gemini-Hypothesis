@@ -49,13 +49,13 @@
 
 **方程**:
 ```math
-\[ D_\mu G^{\mu\nu}(M_d) = J_s^\nu(M_s) \]
+D_\mu G^{\mu\nu}(M_d) = J_s^\nu(M_s) 
 ```
 **部件解析**:
 - **场**: `M_d^μ(x)`，方向场的四维矢量势。
 - **场强**: 
 ```math
-`G^{\mu\nu} = \partial^\mu M_d^\nu - \partial^\nu M_d^\mu - i g_d [M_d^\mu, M_d^\nu]`
+G^{\mu\nu} = \partial^\mu M_d^\nu - \partial^\nu M_d^\mu - i g_d [M_d^\mu, M_d^\nu]
 ```
 其非线性部分的耦合强度 `g_d` 由我们理论中的**方向角 `θ_d`** 决定。
 - **源**: 
@@ -72,7 +72,7 @@ J_s^\nu(M_s) = i g_s (M_s^* \partial^\nu M_s - (\partial^\nu M_s^*) M_s)
 
 **方程**:
 ```math
-\[ (\square + m_s^2) M_s = S_d(M_d) \]
+(\square + m_s^2) M_s = S_d(M_d)
 ```
 **部件解析**:
 - **场**: `M_s(x)`，标度场的复标量函数。
