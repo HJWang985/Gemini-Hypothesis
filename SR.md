@@ -1,13 +1,13 @@
-*** 狭义相对论（Special Relativity）精要
-**一、两大基本公设 (The Two Postulates)
+# 狭义相对论（Special Relativity）精要
+##一、两大基本公设 (The Two Postulates)
 *相对性原理 (Principle of Relativity): 所有惯性参考系（即静止或做匀速直线运动的参考系）都是平权的。在所有惯性系中，物理定律的形式都完全相同。
 *光速不变原理 (Principle of the Constancy of the Speed of Light): 在所有惯性系中，测量到的真空光速 c 的值都是一个与观测者和光源的运动状态无关的常数。
 
-**二、核心数学结构 (The Core Mathematical Structure)
+##二、核心数学结构 (The Core Mathematical Structure)
 *闵可夫斯基时空 (Minkowski Spacetime):
 *它是一个四维的平直时空流形。一个时空点由一个四维向量 $x^\mu = (ct, x, y, z)$ 描述。这里的“平直”体现在其度规张量 $\eta_{\mu\nu}$ 是一个固定不变的矩阵：
 
-**时空间隔 (Spacetime Interval):
+*时空间隔 (Spacetime Interval):
 8两个无穷近的时空点之间的“距离”平方 ds^2 是一个洛伦兹不变量，即在所有惯性系中测量值都相同。
 ```math
 ds^2 = \eta_{\mu\nu} dx^\mu dx^\nu = c^2 dt^2 - dx^2 - dy^2 - dz^2
@@ -17,12 +17,12 @@ ds^2 = \eta_{\mu\nu} dx^\mu dx^\nu = c^2 dt^2 - dx^2 - dy^2 - dz^2
 
 *其中 $\beta = v/c， \gamma = 1 / \sqrt{1 - \beta^2}$ 是洛伦兹因子。
 
-**三、主要物理推论 (Key Physical Consequences)
+##三、主要物理推论 (Key Physical Consequences)
 *时间膨胀 (Time Dilation): 运动的钟比静止的钟走得慢。 $\Delta t' = \gamma \Delta t$。
 *长度收缩 (Length Contraction): 运动的物体在运动方向上看起来更短。 $L' = L / \gamma$。
 *质能等价 (Mass-Energy Equivalence): 物体的能量 E 和质量 m 的关系。静止能量为 E_0 = m_0 c^2。对于运动物体，总能量为 $E = \gamma m_0 c^2$。
 *四维动量 (Four-Momentum):
-*这是一个极其重要的概念。一个质量为 $m_0$ 的粒子的四维动量 $p^\mu$ 为：
+这是一个极其重要的概念。一个质量为 $m_0$ 的粒子的四维动量 $p^\mu$ 为：
 ```math
 p^\mu = (E/c, p_x, p_y, p_z)
 ```
