@@ -24,7 +24,7 @@ T^{\mu\nu} = \frac{2}{\sqrt{-g}} \frac{\delta S}{\delta g_{\mu\nu}} = g^{\mu\alp
 ```
  
 ```math
-G_{\mu\nu} = \nabla_\mu A_\nu - \nabla_\nu A_\mu - i g_d [A_\mu, A_\nu]
+G_{\mu\nu} = \nabla_mu A_nu - \nabla_nu A_mu - i g_d [A_mu, A_nu]
 ```
 *    是方向场的场强张量。
 
