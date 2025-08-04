@@ -19,15 +19,15 @@ T^{\mu\nu} = \frac{2}{\sqrt{-g}} \frac{\delta S}{\delta g_{\mu\nu}} = g^{\mu\alp
 根据我们在白皮书第2章的动力学方程，其背后的、最基础的拉格朗日量密度可以写为两个部分的和： $\mathcal{L} = \mathcal{L}_s + \mathcal{L}_d$。
 
 *   **标度场 $M_s$ 部分 (广义克莱因-戈尔登部分)**：这是一个与规范场耦合的复杂标量场的标准形式。
-    ```math
-    \mathcal{L}_s = g^{\alpha\beta}(D_\alpha M_s)^*(D_\beta M_s) - V(M_s)
-    ```
+```math
+\mathcal{L}_s = g^{\alpha\beta}(D_\alpha M_s)^*(D_\beta M_s) - V(M_s)
+```
     其中 $D_\mu = \nabla_\mu - i g_s A_\mu$ 是包含了规范场 $A_\mu$ (即我们的方向场 $M_d$) 的协变导数，而 $V(M_s)$ 是由“反射对称性”公设决定的势能项。
 
 *   **方向场 $M_d$ 部分 (广义杨-米尔斯部分)**：这是标准的杨-米尔斯场形式。
-    ```math
-    \mathcal{L}_d = -\frac{1}{4} g^{\alpha\mu} g^{\beta\nu} G_{\alpha\beta} G_{\mu\nu}
-    ```
+```math
+\mathcal{L}_d = -\frac{1}{4} g^{\alpha\mu} g^{\beta\nu} G_{\alpha\beta} G_{\mu\nu}
+```
     其中 $G_{\mu\nu} = \nabla_\mu A_\nu - \nabla_\nu A_\mu - i g_d [A_\mu, A_\nu]$ 是方向场的场强张量。
 
 ## 2. 推导 $T^{\mu\nu}$ 的各个组成部分
@@ -36,15 +36,15 @@ T^{\mu\nu} = \frac{2}{\sqrt{-g}} \frac{\delta S}{\delta g_{\mu\nu}} = g^{\mu\alp
 
 *   **方向场 $M_d$ 的贡献 $T_{M_d}^{\mu\nu}$ (来自 $\mathcal{L}_d$)**:
     这部分是电磁场和杨-米尔斯场的能量动量张量的直接推广，描述了“力场”自身的能量、动量和应力。
-    ```math
-    T_{M_d}^{\mu\nu} = -g^{\alpha\beta} G_{\alpha}^{\mu} G_{\beta}^{\nu} + \frac{1}{4} g^{\mu\nu} G_{\alpha\beta}G^{\alpha\beta}
-    ```
+```math
+T_{M_d}^{\mu\nu} = -g^{\alpha\beta} G_{\alpha}^{\mu} G_{\beta}^{\nu} + \frac{1}{4} g^{\mu\nu} G_{\alpha\beta}G^{\alpha\beta}
+```
 
 *   **标度场 $M_s$ 及其相互作用的贡献 $T_{M_s}^{\mu\nu}$ (来自 $\mathcal{L}_s$)**:
     这部分描述了“物质场”以及它与“力场”相互作用所贡献的能量、动量和应力。
-    ```math
-    T_{M_s}^{\mu\nu} = (D^\mu M_s)^*(D^\nu M_s) + (D^\nu M_s)^*(D^\mu M_s) - g^{\mu\nu} \mathcal{L}_s
-    ```
+```math
+T_{M_s}^{\mu\nu} = (D^\mu M_s)^*(D^\nu M_s) + (D^\nu M_s)^*(D^\mu M_s) - g^{\mu\nu} \mathcal{L}_s
+```
 
 ## 3. 完整的能量-动量张量
 
