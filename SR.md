@@ -14,7 +14,9 @@ ds^2 = \eta_{\mu\nu} dx^\mu dx^\nu = c^2 dt^2 - dx^2 - dy^2 - dz^2
 ```
 **洛伦兹变换 (Lorentz Transformation):
 *取代伽利略变换，是闵可夫斯基时空中不同惯性系之间的坐标变换法则。它保证了时空间隔 $ds^2$ 的不变性。对于一个沿 x 轴以速度 v 运动的参考系，变换矩阵为：
-
+```math    
+\begin{pmatrix} ct' \\ x' \\ y' \\ z' \end{pmatrix} = \begin{pmatrix} \gamma & -\beta\gamma & 0 & 0 \\ -\beta\gamma & \gamma & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 1 \end{pmatrix} \begin{pmatrix} ct \\ x \\ y \\ z \end{pmatrix}
+```
 *其中 $\beta = v/c， \gamma = 1 / \sqrt{1 - \beta^2}$ 是洛伦兹因子。
 
 ## **三、主要物理推论 (Key Physical Consequences)**
