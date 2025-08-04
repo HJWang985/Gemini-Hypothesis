@@ -22,11 +22,11 @@ T^{\mu\nu} = \frac{2}{\sqrt{-g}} \frac{\delta S}{\delta g_{\mu\nu}} = g^{\mu\alp
 ```math
 \mathcal{L}_s = g^{\alpha\beta}(D_\alpha M_s)^*(D_\beta M_s) - V(M_s)
 ```
-    其中 
+ 
 ```math
 G_{\mu\nu} = \nabla_\mu A_\nu - \nabla_\nu A_\mu - i g_d [A_\mu, A_\nu]
 ```
-    是方向场的场强张量。
+*    是方向场的场强张量。
 
 *   **方向场 $M_d$ 部分 (广义杨-米尔斯部分)**：这是标准的杨-米尔斯场形式。
 ```math
