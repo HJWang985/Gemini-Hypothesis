@@ -28,7 +28,7 @@ T^{\mu\nu} = \frac{2}{\sqrt{-g}} \frac{\delta S}{\delta g_{\mu\nu}} = g^{\mu\alp
 ```math
 \mathcal{L}_d = -\frac{1}{4} g^{\alpha\mu} g^{\beta\nu} G_{\alpha\beta} G_{\mu\nu}
 ```
-    其中 $G_{\mu\nu}=\nabla_\muA_\nu-\nabla_\nuA_\mu-ig_d[A_\mu,A_\nu]$ 是方向场的场强张量。
+*    其中 $G_{\mu\nu}=\nabla_\muA_\nu-\nabla_\nuA_\mu-ig_d[A_\mu,A_\nu]$ 是方向场的场强张量。
 
 ## 2. 推导 $T^{\mu\nu}$ 的各个组成部分
 
