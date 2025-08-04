@@ -22,13 +22,13 @@ T^{\mu\nu} = \frac{2}{\sqrt{-g}} \frac{\delta S}{\delta g_{\mu\nu}} = g^{\mu\alp
 ```math
 \mathcal{L}_s = g^{\alpha\beta}(D_\alpha M_s)^*(D_\beta M_s) - V(M_s)
 ```
-    其中 $D_\mu = \nabla_\mu - i g_s A_\mu$ 是包含了规范场 $A_\mu$ (即我们的方向场 $M_d$) 的协变导数，而 $V(M_s)$ 是由“反射对称性”公设决定的势能项。
+    其中 $D_\mu=\nabla_\mu-ig_sA_\mu$ 是包含了规范场 $A_\mu$ (即我们的方向场 $M_d$) 的协变导数，而 $V(M_s)$ 是由“反射对称性”公设决定的势能项。
 
 *   **方向场 $M_d$ 部分 (广义杨-米尔斯部分)**：这是标准的杨-米尔斯场形式。
 ```math
 \mathcal{L}_d = -\frac{1}{4} g^{\alpha\mu} g^{\beta\nu} G_{\alpha\beta} G_{\mu\nu}
 ```
-    其中 $G_{\mu\nu} = \nabla_\mu A_\nu - \nabla_\nu A_\mu - i g_d [A_\mu, A_\nu]$ 是方向场的场强张量。
+    其中 $G_{\mu\nu}=\nabla_\muA_\nu-\nabla_\nuA_\mu-ig_d[A_\mu,A_\nu]$ 是方向场的场强张量。
 
 ## 2. 推导 $T^{\mu\nu}$ 的各个组成部分
 
