@@ -6,7 +6,9 @@
 ## **二、核心数学结构 (The Core Mathematical Structure)**
 *闵可夫斯基时空 (Minkowski Spacetime):
 *它是一个四维的平直时空流形。一个时空点由一个四维向量 $x^\mu = (ct, x, y, z)$ 描述。这里的“平直”体现在其度规张量 $\eta_{\mu\nu}$ 是一个固定不变的矩阵：
-
+```math      
+\eta_{\mu\nu} = \begin{pmatrix} 1 & 0 & 0 & 0 \\ 0 & -1 & 0 & 0 \\ 0 & 0 & -1 & 0 \\ 0 & 0 & 0 & -1 \end{pmatrix}
+```
 *时空间隔 (Spacetime Interval):
 8两个无穷近的时空点之间的“距离”平方 ds^2 是一个洛伦兹不变量，即在所有惯性系中测量值都相同。
 ```math
