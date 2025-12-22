@@ -10,7 +10,7 @@
 
 设磁化等离子体处于静磁场 $\vec{B}_0$ 中。
 *   **双向量平面 (Bivector Plane)**：在 GA 中，磁场不仅仅是一个轴向量，它定义了一个**旋转双向量平面** $I$。
-    $$ I = \frac{\vec{B}_0}{|\vec{B}_0|} \cdot \text{pseudo-scalar} \quad (\text{在 2D 截面上 } I^2 = -1) $$
+    $$I = \frac{\vec{B}_0}{|\vec{B}_0|} \cdot \text{pseudo-scalar} \quad (\text{在 2D 截面上 } I^2 = -1)$$
     这个 $I$ 正是费米子 Topo(1) 旋转所处的法平面。
 
 ### 2. 粒子动力学的转子描述 (Rotor Description of Particle Dynamics)
