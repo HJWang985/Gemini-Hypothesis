@@ -17,7 +17,7 @@
 
 粒子的回旋运动（Cyclotron Motion）不再用复数描述，而是由**转子（Rotor）** $\psi$ 驱动：
 
-$$\vec{v}(t) = \psi(t) \vec{v}_\perp(0) \tilde{\psi}(t) + \vec{v}_\parallel$$
+$$\vec{v}(t) = \psi(t) \vec{v}_ \perp(0) \tilde{\psi}(t) + \vec{v}_ \parallel$$
 其中转子定义为：
 $$\psi(t) = e^{-I \Omega_c t / 2}$$
 $\Omega_c = qB/m$ 为回旋频率。
