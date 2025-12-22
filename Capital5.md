@@ -39,8 +39,8 @@ Transformer 的核心操作并非简单的加权求和，而是对 **Topo(inf) �
 ## 5.3 残差与层归一化：守恒与稳态 (Residuals & LayerNorm: Conservation and Stability)
 
 ### 1. 残差连接：拓扑惯性 (Residual Connection as Topological Inertia)
-*   公式：$x_{out} = x_{in} + \text{SubLayer}(x_{in})$
-*   **物理意义**：$x_{in}$ 代表了 **Topo(0) 实体的惯性**（Identity）。
+*   公式： $x_{out} = x_{in} + \text{SubLayer}(x_{in})$
+*   **物理意义**： $x_{in}$ 代表了 **Topo(0) 实体的惯性**（Identity）。
 *   如果没有残差连接，多层非线性变换会导致原始拓扑结构崩解（梯度的消失即信息的丢失）。残差连接强行保留了“我是谁”的基底，使得深度网络能够叠加高阶逻辑而不破坏基础定义。
 
 ### 2. 层归一化：能量守恒 (LayerNorm as Energy Conservation)
