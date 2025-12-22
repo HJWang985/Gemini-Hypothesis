@@ -31,7 +31,7 @@ Vlasov 方程的线性化解依赖于对粒子历史轨迹的积分（沿特征�
 $$\mathcal{P} = \exp\left( - \int_{0}^{\tau} i (\vec{k} \cdot \vec{v}(t') - \omega) dt' \right)$$
 
 在 GA 视角下，$\vec{k} \cdot \vec{v}(t')$ 代表了波矢量与旋转速度矢量的几何内积。由于 $\vec{v}(t')$ 是旋转的，这个内积本质上是一个**振荡标量**：
-$$ \vec{k} \cdot \vec{v}(t') = k_\perp v_\perp \cos(\Omega_c t' + \phi_0) $$
+$$\vec{k} \cdot \vec{v}(t') = k_\perp v_\perp \cos(\Omega_c t' + \phi_0)$$
 
 ### 4. 几何共振的涌现 (Emergence of Geometric Resonance)
 
@@ -40,10 +40,10 @@ $$ \vec{k} \cdot \vec{v}(t') = k_\perp v_\perp \cos(\Omega_c t' + \phi_0) $$
 2.  **粒子的回旋频率 $\Omega_c$**（内部 Topo(1) 平面的旋转）。
 
 利用 **Jacobi-Anger 展开**（这在 GA 中对应于将指数函数在双向量基上展开）：
-$$ e^{i z \sin \theta} = \sum_{n=-\infty}^{\infty} J_n(z) e^{i n \theta} $$
+$$e^{i z \sin \theta} = \sum_{n=-\infty}^{\infty} J_n(z) e^{i n \theta}$$
 
 系统的介电张量（Dielectric Tensor）会出现如下形式的分母：
-$$ \frac{1}{\omega - n\Omega_c} $$
+$$\frac{1}{\omega - n\Omega_c}$$
 
 ### 5. 伯恩斯坦模的本质 (Essence of Bernstein Modes)
 
