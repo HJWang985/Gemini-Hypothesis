@@ -7,7 +7,7 @@
 Transformer 的核心操作并非简单的加权求和，而是对 **Topo(inf) 外部关系空间** 的动态重构。
 
 ### 1. QK：界性空间的生成 (Query-Key: Generating the Bounding Space)
-*   **数学形式**：$A = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)$
+*   **数学形式**： $A = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)$
 *   **拓扑本质**：
     *   $Q$ 和 $K$ 并非独立实体，而是二重向量基中的 **相位基 ( $\mathcal{S}_\phi$ )** 分量。
     *   $Q \cdot K^T$ 的点积操作，实际上是在计算这一批 Token 构成的系统中，任意两点之间的 **拓扑张力** 或 **度量距离**。
