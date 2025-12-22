@@ -30,7 +30,7 @@ Vlasov 方程的线性化解依赖于对粒子历史轨迹的积分（沿特征�
 
 $$\mathcal{P} = \exp\left( - \int_{0}^{\tau} i (\vec{k} \cdot \vec{v}(t') - \omega) dt' \right)$$
 
-在 GA 视角下，$\vec{k} \cdot \vec{v}(t')$ 代表了波矢量与旋转速度矢量的几何内积。由于 $\vec{v}(t')$ 是旋转的，这个内积本质上是一个**振荡标量**：
+在 GA 视角下， $\vec{k} \cdot \vec{v}(t')$ 代表了波矢量与旋转速度矢量的几何内积。由于 $\vec{v}(t')$ 是旋转的，这个内积本质上是一个**振荡标量**：
 $$\vec{k} \cdot \vec{v}(t') = k_\perp v_\perp \cos(\Omega_c t' + \phi_0)$$
 
 ### 4. 几何共振的涌现 (Emergence of Geometric Resonance)
