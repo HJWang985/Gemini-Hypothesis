@@ -59,22 +59,22 @@ $$\frac{1}{\omega - n\Omega_c}$$
 尽管经典 Vlasov 理论预测了伯恩斯坦模的存在，但在实际物理应用中，该理论展现出极端的脆弱性。在二重向量基视角下，这些局限并非数学技巧的不足，而是**隐含拓扑约束**未能显形的结果。
 
 ### 1. 对正交性的极端敏感 (Extreme Sensitivity to Orthogonality)
-*   **现象**：伯恩斯坦模是严格的横向波（$\vec{k} \cdot \vec{B}_0 = 0$）。
-*   **局限**：经典理论表明，只要波矢量 $\vec{k}$ 在磁场方向上有微小的分量（$k_\parallel \neq 0$），强烈的**无碰撞朗道阻尼**就会瞬间被激活，导致模式湮灭。
+*   **现象**：伯恩斯坦模是严格的横向波（ $\vec{k} \cdot \vec{B}_0 = 0$ ）。
+*   **局限**：经典理论表明，只要波矢量 $\vec{k}$ 在磁场方向上有微小的分量（ $k_\parallel \neq 0$ ），强烈的**无碰撞朗道阻尼**就会瞬间被激活，导致模式湮灭。
 *   **物理矛盾**：在真实的物理环境（如托卡马克或星际介质）中，磁场线总是弯曲且充满涨落的，数学上完美的“零度夹角”不可能物理实现。然而，伯恩斯坦模依然能被稳定观测到。这暗示了存在某种**拓扑保护机制**，锁定了有效传播平面。
 
 ### 2. 尺度截断与相位震荡 (Scale Cutoff and Phase Oscillation)
-*   **现象**：模式的存在依赖于有限拉莫尔半径效应（FLR, $k_\perp \rho_L \sim 1$）。
-*   **局限**：当波长极短（$k_\perp \to \infty$）时，经典积分面临相位剧烈震荡的难题。物理上，这意味着我们在用一个宏观轨道去探测微观波动。
+*   **现象**：模式的存在依赖于有限拉莫尔半径效应（FLR, $k_\perp \rho_L \sim 1$ ）。
+*   **局限**：当波长极短（ $k_\perp \to \infty$ ）时，经典积分面临相位剧烈震荡的难题。物理上，这意味着我们在用一个宏观轨道去探测微观波动。
 *   **拓扑视角**：这实际上触及了 **Topo(0) 微观核** 的分辨率极限。经典理论假设空间是连续无限可分的，而忽略了微观拓扑结构的离散性。
 
 ### 3. 高阶谐波的相对论混叠 (Relativistic Overlap of High Harmonics)
-*   **现象**：对于高阶模（$n \gg 1$）或高温等离子体，粒子的回旋频率因相对论质量修正而下降（$\Omega = \Omega_c / \gamma$）。
+*   **现象**：对于高阶模（ $n \gg 1$ ）或高温等离子体，粒子的回旋频率因相对论质量修正而下降（ $\Omega = \Omega_c / \gamma$ ）。
 *   **局限**：共振峰会变宽并发生重叠（Overlap）。一旦重叠，离散的伯恩斯坦模就会融化为一个混沌的连续谱。经典线性理论无法描述这种**模式耦合**与**去相干**。
 *   **本质**：这是二重向量基在极端条件下（高温/高能）发生**分离（Decoupling）**的征兆。经典理论强行维持的“刚性粒子”假设在这里失效了。
 
 ### 4. 非均匀性与共振吸收 (Inhomogeneity and Resonant Absorption)
-*   **现象**：真实磁场总是有梯度的（$\nabla B \neq 0$）。
+*   **现象**：真实磁场总是有梯度的（ $\nabla B \neq 0$ ）。
 *   **局限**：共振条件 $\omega = n\Omega_c(x)$ 变成位置的函数。波在传播中会遇到“奇点层”，能量被局部吞噬。
 *   **本质**：这是宏观波动能量向微观拓扑自由度的**单向耗散**。经典流体模型无法解释这种能量是如何“消失”在奇点处的。
 
@@ -88,21 +88,21 @@ $$\frac{1}{\omega - n\Omega_c}$$
 
 定义系统的态函数 $\Psi$ 为标量场 $\phi$ 在两个拓扑核上的加权加载：
 
-$$ \Psi(x, t) = \left( \alpha \cdot \mathcal{T}_0[\text{Micro}] \oplus \beta \cdot \mathcal{T}_\infty[\text{Macro}] \right) \circ \phi(x, t) $$
+$$\Psi(x, t) = \left( \alpha \cdot \mathcal{T} _0[\text{Micro}] \oplus \beta \cdot \mathcal{T} _\infty[\text{Macro}] \right) \circ \phi(x, t)$$
 
-*   **$\mathcal{T}_0$ (Topo 0 核)**：描述**微观近性**。对应粒子的回旋动力学（相位基 $\mathcal{S}_{\phi}$）。其特征尺度为拉莫尔半径 $\rho_L$。
-*   **$\mathcal{T}_\infty$ (Topo inf 核)**：描述**宏观外性**。对应电磁场的全局约束（位置基 $\mathcal{S}_x$）。其特征尺度为波长 $\lambda$。
+*   **$\mathcal{T}_0$ (Topo 0 核)**：描述**微观近性**。对应粒子的回旋动力学（相位基 $\mathcal{S}_{\phi}$ ）。其特征尺度为拉莫尔半径 $\rho_L$ 。
+*   **$\mathcal{T}_\infty$ (Topo inf 核)**：描述**宏观外性**。对应电磁场的全局约束（位置基 $\mathcal{S}_x$ ）。其特征尺度为波长 $\lambda$ 。
 *   **$\alpha, \beta$**：精度分配系数（Resolution Coefficients），决定了我们“看”这个系统的焦距。
 
 ### 2. 经典还原：伯恩斯坦模的涌现 (Classical Reduction: Emergence of Bernstein Modes)
 
 当我们把观测精度聚焦于微观尺度，即让 $\alpha \to 1$ 且 $\beta$ 保持背景约束时：
 
-*   **物理场景**：波长 $\lambda$ 接近拉莫尔半径 $\rho_L$（$k_\perp \rho_L \sim 1$）。此时我们无法忽略粒子的回旋细节。
+*   **物理场景**：波长 $\lambda$ 接近拉莫尔半径 $\rho_L$（ $k_\perp \rho_L \sim 1$ ）。此时我们无法忽略粒子的回旋细节。
 *   **拓扑共振**：
-    *   $\mathcal{T}_0$ 算子产生一个旋转相位因子 $e^{i \Omega_c t}$。
-    *   $\mathcal{T}_\infty$ 算子产生一个波动相位因子 $e^{-i \omega t}$。
-    *   两者的纠缠（$\oplus$）导致了**贝塞尔函数 $J_n$** 的出现（数学上，这是平面波在旋转基上的展开）。
+    *   $\mathcal{T}_0$ 算子产生一个旋转相位因子 $e^{i \Omega_c t}$ 。
+    *   $\mathcal{T}_\infty$ 算子产生一个波动相位因子 $e^{-i \omega t}$ 。
+    *   两者的纠缠（$\oplus$）导致了**贝塞尔函数 $J_n$ ** 的出现（数学上，这是平面波在旋转基上的展开）。
 *   **结论**：伯恩斯坦模正是 **Topo(0) 微观旋转** 与 **Topo(inf) 宏观波动** 在**相近尺度下**发生的**强拓扑干涉**。
 
 ### 3. 尺度逼近与效应分离 (Scale Approximation and Effect Separation)
@@ -110,7 +110,7 @@ $$ \Psi(x, t) = \left( \alpha \cdot \mathcal{T}_0[\text{Micro}] \oplus \beta \cd
 通过调整精度系数 $\alpha$ 和 $\beta$，我们可以逼近不同的物理极限，验证模型的泛用性。
 
 #### 3.1 流体极限：Topo(0) 的模糊化 (Fluid Limit: Blurring of Topo 0)
-*   **操作**：设 $\alpha \to 0$（忽略微观回旋细节，$\rho_L \to 0$），$\beta \to 1$。
+*   **操作**：设 $\alpha \to 0$（忽略微观回旋细节，$\rho_L \to 0$ ），$\beta \to 1$ 。
 *   **物理意义**：我们将二重基的相位部分“平均化”了。
 *   **结果**：
     *   贝塞尔项 $J_n(k_\perp \rho_L)$ 退化。伯恩斯坦模消失。
@@ -143,22 +143,22 @@ $$ \Psi(x, t) = \left( \alpha \cdot \mathcal{T}_0[\text{Micro}] \oplus \beta \cd
 
 ### 1. 核心算法：动态变焦 (Dynamic Zooming)
 
-构建一个混合求解器，其演化方程不再是单纯的分布函数 $f$ 或流体变量 $\mathbf{U}$，而是二元拓扑态 $\Psi$：
+构建一个混合求解器，其演化方程不再是单纯的分布函数 $f$ 或流体变量 $\mathbf{U}$ ，而是二元拓扑态 $\Psi$ ：
 
-$$ \partial_t \Psi + \hat{H}(\alpha, \beta) \Psi = 0 $$
+$$\partial_t \Psi + \hat{H}(\alpha, \beta) \Psi = 0$$
 
 其中算子 $\hat{H}$ 的构造依赖于局部拓扑参数：
-*   **拓扑感应器 (Topology Sensor)**：在每个网格点计算局部**非同伦张力**（如磁场梯度 $\nabla B$ 或温度梯度 $\nabla T$）。
+*   **拓扑感应器 (Topology Sensor)**：在每个网格点计算局部**非同伦张力**（如磁场梯度 $\nabla B$ 或温度梯度 $\nabla T$ ）。
 *   **权重动态分配**：
     *   **平坦区域**（张力低）：令 $\alpha \to 0, \beta \to 1$。算法自动退化为 **MHD 求解器**（计算成本低）。
-    *   **共振区域**（张力高，$\omega \approx n\Omega_c$）：令 $\alpha \to 1$。算法自动切换为 **全动理学 Vlasov 求解器**（高精度，捕捉回旋相位）。
+    *   **共振区域**（张力高，$\omega \approx n\Omega_c$ ）：令 $\alpha \to 1$。算法自动切换为 **全动理学 Vlasov 求解器**（高精度，捕捉回旋相位）。
 
 ### 2. 预期模拟结果 (Expected Simulation Results)
 
 通过对托卡马克边缘等离子体（存在强梯度）进行模拟，我们要验证：
 1.  **伯恩斯坦模的自发生成**：在不人为输入贝塞尔函数的前提下，仅通过 $\alpha$ 权重的局部升高，系统能否在共振层自动涌现出精细的横波结构？
 2.  **能量耗散通道**：观察能量是否在 $\alpha \to 1$ 的区域（微观核占优）被“吞噬”，转化为粒子的随机热运动（Topo 0 熵增），从而无需引入人工粘性项。
-3.  **计算效率**：对比全 PIC 模拟，这种“按需变焦”的拓扑求解器应在保持共振物理精度的同时，大幅降低计算量（$10^2 \sim 10^3$ 倍）。
+3.  **计算效率**：对比全 PIC 模拟，这种“按需变焦”的拓扑求解器应在保持共振物理精度的同时，大幅降低计算量（ $10^2 \sim 10^3$ 倍）。
 
 ### 3. 实验对照 (Experimental Counterpart)
 
@@ -178,7 +178,7 @@ $$ \partial_t \Psi + \hat{H}(\alpha, \beta) \Psi = 0 $$
 
 | 物理实体 (Physics) | 计算实体 (Computation) |
 | :--- | :--- |
-| **相空间微元** $(x, v)$ | **Token** (Embedding Vector $h_i$) |
+| **相空间微元** $(x, v)$ | **Token** (Embedding Vector $h_i$ ) |
 | **二重向量基** $(\mathcal{S}_x, \mathcal{S} _\phi)$ | **位置编码 + 语义编码** (Positional + Semantic Embedding) |
 | **回旋相位锁定** $\int e^{i(\Phi_{wave} - \Phi_{particle})} dt$ | **Attention Score** $\text{Softmax}(QK^T)$ |
 | **介电响应函数** $\epsilon(\mathbf{k}, \omega)$ | **Attention Output** $\sum A_{ij} V_j$ |
@@ -196,17 +196,17 @@ $$PE_{cyc}(t) = [\sin(\Omega_c t), \cos(\Omega_c t), \dots, \sin(n\Omega_c t), \
 这相当于将 Topo(0) 的微观旋转信息直接硬编码进输入向量。
 
 #### 2.2 核心层：物理注意力 (Physics-Informed Attention)
-计算 Token $i$（波场探测点）与 Token $j$（源粒子）之间的关联。
+计算 Token $i$ （波场探测点）与 Token $j$ （源粒子）之间的关联。
 标准 Attention 公式：
 
 $$\alpha_{ij} = \frac{(\mathbf{W}_Q \mathbf{E}_i)^T (\mathbf{W}_K \mathbf{E}_j)}{\sqrt{d}}$$
 
 在我们的物理场景中，这个内积操作实际上是在计算 **相位匹配度**：
 
-$$\mathbf{E}_i \cdot \mathbf{E}_j \sim \cos(\mathbf{k} \cdot \mathbf{x}_{ij} - \omega t_{ij} + n\Omega_c \tau)$$
+$$\mathbf{E} _i \cdot \mathbf{E} _j \sim \cos(\mathbf{k} \cdot \mathbf{x} _{ij} - \omega t _{ij} + n\Omega_c \tau)$$
 
-*   **非共振时**：相位随机震荡，内积趋近于 0，$\alpha_{ij}$ 很小。Token 之间“看不见”对方。
-*   **共振时** ($\omega \approx n\Omega_c$)：相位因子在大尺度上相干叠加，$\alpha_{ij}$ 出现**尖峰**。模型自动“关注”到了那些对波有贡献的共振粒子。
+*   **非共振时**：相位随机震荡，内积趋近于 0， $\alpha_{ij}$ 很小。Token 之间“看不见”对方。
+*   **共振时** ( $\omega \approx n\Omega_c$ )：相位因子在大尺度上相干叠加， $\alpha_{ij}$ 出现**尖峰**。模型自动“关注”到了那些对波有贡献的共振粒子。
 
 #### 2.3 输出层：拓扑重构
 Transformer 的输出不是预测下一个词，而是重构系统的 **介电张量** 或 **分布函数修正量**。
