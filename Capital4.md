@@ -179,7 +179,7 @@ $$ \partial_t \Psi + \hat{H}(\alpha, \beta) \Psi = 0 $$
 | 物理实体 (Physics) | 计算实体 (Computation) |
 | :--- | :--- |
 | **相空间微元** $(x, v)$ | **Token** (Embedding Vector $h_i$) |
-| **二重向量基** $(\mathcal{S}_x, \mathcal{S}_\phi)$ | **位置编码 + 语义编码** (Positional + Semantic Embedding) |
+| **二重向量基** $(\mathcal{S}_x, \mathcal{S} _\phi)$ | **位置编码 + 语义编码** (Positional + Semantic Embedding) |
 | **回旋相位锁定** $\int e^{i(\Phi_{wave} - \Phi_{particle})} dt$ | **Attention Score** $\text{Softmax}(QK^T)$ |
 | **介电响应函数** $\epsilon(\mathbf{k}, \omega)$ | **Attention Output** $\sum A_{ij} V_j$ |
 | **伯恩斯坦共振** $\omega \approx n\Omega_c$ | **Attention Map 中的极值路径** (Sharp Attention Peaks) |
@@ -188,38 +188,43 @@ $$ \partial_t \Psi + \hat{H}(\alpha, \beta) \Psi = 0 $$
 
 #### 2.1 输入层：拓扑 Embedding
 将等离子体离散化为 $N$ 个 Token。每个 Token $i$ 包含其相空间坐标和局部拓扑状态：
-$$ \mathbf{E}_i = \text{Embed}(x_i, v_{\perp, i}, \phi_i, t) $$
+
+$$\mathbf{E} _i = \text{Embed}(x _i, v _{\perp, i}, \phi_i, t)$$
+
 关键在于引入 **“回旋位置编码” (Cyclotron Positional Encoding)**：
-$$ PE_{cyc}(t) = [\sin(\Omega_c t), \cos(\Omega_c t), \dots, \sin(n\Omega_c t), \cos(n\Omega_c t)] $$
+$$PE_{cyc}(t) = [\sin(\Omega_c t), \cos(\Omega_c t), \dots, \sin(n\Omega_c t), \cos(n\Omega_c t)]$$
 这相当于将 Topo(0) 的微观旋转信息直接硬编码进输入向量。
 
 #### 2.2 核心层：物理注意力 (Physics-Informed Attention)
 计算 Token $i$（波场探测点）与 Token $j$（源粒子）之间的关联。
 标准 Attention 公式：
-$$ \alpha_{ij} = \frac{(\mathbf{W}_Q \mathbf{E}_i)^T (\mathbf{W}_K \mathbf{E}_j)}{\sqrt{d}} $$
+
+$$\alpha_{ij} = \frac{(\mathbf{W}_Q \mathbf{E}_i)^T (\mathbf{W}_K \mathbf{E}_j)}{\sqrt{d}}$$
 
 在我们的物理场景中，这个内积操作实际上是在计算 **相位匹配度**：
-$$ \mathbf{E}_i \cdot \mathbf{E}_j \sim \cos(\mathbf{k} \cdot \mathbf{x}_{ij} - \omega t_{ij} + n\Omega_c \tau) $$
+
+$$\mathbf{E}_i \cdot \mathbf{E}_j \sim \cos(\mathbf{k} \cdot \mathbf{x}_{ij} - \omega t_{ij} + n\Omega_c \tau)$$
 
 *   **非共振时**：相位随机震荡，内积趋近于 0，$\alpha_{ij}$ 很小。Token 之间“看不见”对方。
 *   **共振时** ($\omega \approx n\Omega_c$)：相位因子在大尺度上相干叠加，$\alpha_{ij}$ 出现**尖峰**。模型自动“关注”到了那些对波有贡献的共振粒子。
 
 #### 2.3 输出层：拓扑重构
 Transformer 的输出不是预测下一个词，而是重构系统的 **介电张量** 或 **分布函数修正量**。
-$$ \delta f(\mathbf{x}, \mathbf{v}, t) = \text{LayerNorm}(\text{Attention}(\mathbf{E})) $$
+
+$$\delta f(\mathbf{x}, \mathbf{v}, t) = \text{LayerNorm}(\text{Attention}(\mathbf{E}))$$
 
 ### 3. 无监督训练策略 (Unsupervised Training Strategy)
 
 我们不需要任何“标签数据”（即不需要预先知道伯恩斯坦模的解）。我们利用**物理自洽性**作为 Loss Function：
 
-$$ \mathcal{L} = \mathcal{L}_{\text{Topo(0)}} + \mathcal{L}_{\text{Topo(inf)}} $$
+$$\mathcal{L} = \mathcal{L} _{\text{Topo(0)}} + \mathcal{L} _{\text{Topo(inf)}}$$
 
 1.  **Topo(0) 约束（粒子守恒）**：
-    $$ \mathcal{L}_{\text{Topo(0)}} = || \partial_t f + \mathbf{v} \cdot \nabla f + \frac{q}{m}(\mathbf{E} + \mathbf{v} \times \mathbf{B}) \cdot \nabla_v f ||^2 $$
+    $$\mathcal{L}_{\text{Topo(0)}} = || \partial_t f + \mathbf{v} \cdot \nabla f + \frac{q}{m}(\mathbf{E} + \mathbf{v} \times \mathbf{B}) \cdot \nabla_v f ||^2$$
     要求网络输出满足 Vlasov 方程的局部守恒性。
 
 2.  **Topo(inf) 约束（场自洽/泊松方程）**：
-    $$ \mathcal{L}_{\text{Topo(inf)}} = || \nabla \cdot \mathbf{E} - 4\pi \int \delta f d^3v ||^2 $$
+    $$\mathcal{L}_{\text{Topo(inf)}} = || \nabla \cdot \mathbf{E} - 4\pi \int \delta f d^3v ||^2$$
     要求电场与粒子分布在全局上自洽。
 
 **训练过程**：
