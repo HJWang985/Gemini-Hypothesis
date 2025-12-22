@@ -19,7 +19,7 @@
 
 $$\vec{v}(t) = \psi(t) \vec{v}_\perp(0) \tilde{\psi}(t) + \vec{v}_\parallel$$
 其中转子定义为：
-$$ \psi(t) = e^{-I \Omega_c t / 2} $$
+$$\psi(t) = e^{-I \Omega_c t / 2}$$
 $\Omega_c = qB/m$ 为回旋频率。
 这表明，粒子的速度矢量 $\vec{v}_\perp$ 在双向量平面 $I$ 上以角速度 $\Omega_c$ 进行纯粹的**几何旋转**。
 
